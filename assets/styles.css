@@ -7,24 +7,41 @@ body {
         font-family: "Barlow", sans-serif;
     background-color: black;
 }
+.ingresar {
+    background-color: red;
+    color: white;
+    border-radius: 9px;
+    padding:  10px 20px 10px 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ingresar a{
+    color: white;
+    font-weight: bold;
+}
 .contenedor-login{ 
 
     width: 320px;
     height: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-
-
-
+    
+    }
+    .contenedor-login a{
+        color: red;
     }
 .cuerpo-login {
-    background-color: grey;
     position:absolute;
-    top:50%;
+    top:10%;
     left: 50%;
-    transform: translate(-50%,-50%);    
-    padding: 20px 30px;
+    transform: translate(-50%,-10%);    
+    padding: 20px 30px; 
+
     }
 .cuerpo-login button{
     padding: 10px 20px;
@@ -35,10 +52,11 @@ body {
     outline: none;
     cursor: pointer;
     border-radius: 5px; 
+    margin-top: 10px;
 }
 .login-popup{
 position: absolute;
-top: -150%;
+top: -100%;
 left: 50%;
 opacity: 0;
 transform: translate(-50%,-50%) scale(1.25);  
@@ -52,7 +70,7 @@ border-radius: 10px;
 
 }
 .login-popup.active{
-    top: 50%;
+    top: 100%;
     opacity: 1;
     transform: translate(-50%,-50%) scale(1);
 
@@ -127,7 +145,7 @@ border-radius: 10px;
  
 }
 .registrarse-popup.active{
-    top: 50%;
+    top: 100%;
     left: 50%;
     opacity: 1;
     transform: translate(-50%,-50%) scale(1);
@@ -188,7 +206,9 @@ main {
             height: 100px;
             background-color: red;
             align-items: center;
-            justify-content: center; }
+            justify-content: center; 
+            margin-top: 200px;
+        }
             .piedepagina__iconos {
               display: flex;
               flex-direction: column;
@@ -199,7 +219,11 @@ main {
             .piedepagina__iconos2-redes {
               display: flex;
               flex-direction: row; }
-
+                .piedepagina__iconos2-redes li{
+                    padding-left: 10px; 
+                    padding-top: 10px;
+                    list-style: none;
+                }
 
               .container{
                 width: 1000px;
@@ -225,6 +249,7 @@ main {
             header .shopping img{
                 width: 40px;
                 margin-right: 10px;
+                cursor: pointer;
             }
             header .shopping span{
 
@@ -235,6 +260,7 @@ main {
                 align-items: center;
                 color: #fff;
                 margin: 0 65px 0 60px;
+                cursor: pointer;
             }
             .list{
                 display: grid;
