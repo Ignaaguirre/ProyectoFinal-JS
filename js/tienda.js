@@ -30,7 +30,7 @@
         {
             id: 3,
             name: 'REMERA ANBU',
-            image: 'anburemera.PNG',
+            image: 'anburemera.png',
             price: 220000
         },
         {
@@ -47,8 +47,8 @@
         },
         {
             id: 6,
-            name: 'PRODUCT NAME 6',
-
+            name: 'PROTEINA WHEY',
+            image: 'proteinaanbu.png',
             price: 120000
         }
     ];
