@@ -1,5 +1,4 @@
-
-    let openShopping = document.querySelector('.shopping');
+   let openShopping = document.querySelector('.shopping');
     let closeShopping = document.querySelector('.closeShopping');
     let list = document.querySelector('.list');
     let listCard = document.querySelector('.listCard');
@@ -19,37 +18,43 @@
             id: 1,
             name: 'BOTELLA ANBU',
             image: 'botellaanbu.jpg',
-            price: 120000
+            price: 2000
         },
         {
             id: 2,
             name: 'MOCHILA ANBU',
             image: 'mochilaanbu.jpg',
-            price: 120000
+            price: 9000
         },
         {
             id: 3,
             name: 'REMERA ANBU',
-            image: 'anburemera.png',
-            price: 220000
+            image: 'anburemera.PNG',
+            price: 3500
         },
         {
             id: 4,
             name: 'BUZO ANBU',
             image: 'buzoanbu.jpg',
-            price: 123000
+            price: 9500
         },
         {
             id: 5,
             name: 'GORRA ANBU',
             image: 'anbugorra.png',
-            price: 320000
+            price: 2000
         },
         {
             id: 6,
             name: 'PROTEINA WHEY',
             image: 'proteinaanbu.png',
-            price: 120000
+            price: 10000
+        },
+        {
+            id: 7,
+            name: 'CREATINA',
+            image: 'creatinaanbu.png',
+            price: 15000
         }
     ];
     let listCards  = [];
@@ -60,7 +65,7 @@
             newDiv.innerHTML = `
                 <img src="image/${value.image}">
                 <div class="title">${value.name}</div>
-                <div class="price">${value.price.toLocaleString()}</div>
+                <div class="price">$ ${value.price.toLocaleString()}</div>
                 <button onclick="añadirCarrito(${key})">AÑADIR AL CARRITO</button>`;
             list.appendChild(newDiv);
         })
